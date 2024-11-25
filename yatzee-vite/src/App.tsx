@@ -1,13 +1,11 @@
-import { Button, ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, defaultSystem, Text } from '@chakra-ui/react'
 import './App.css'
-import { Title } from './Title'
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider value={defaultSystem}>
       <div>
-        <Title />
-        <Button colorScheme="blue">ボタン</Button>
+        <Text fontSize="2xl">家計簿アプリ</Text>
       </div>
     </ChakraProvider>
   )
