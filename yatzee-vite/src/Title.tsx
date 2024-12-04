@@ -1,9 +1,12 @@
-export const Title = () => {
-    const year: string = "584"
-    const season: string = "冷乾季"
+import { ChakraProvider, defaultSystem, Heading } from "@chakra-ui/react";
+
+export default function Title() {
+
     return (
-        <div>
-            <h1>征代記第{year}年の{season}</h1>
-        </div>
+        <ChakraProvider value={defaultSystem}>
+            <div>
+                <Heading fontWeight="semibold">Yatzee</Heading>
+            </div>
+        </ChakraProvider>
     )
 }

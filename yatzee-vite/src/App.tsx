@@ -1,16 +1,9 @@
-import {
-  ChakraProvider,
-  defaultSystem
-} from '@chakra-ui/react'
-import './App.css'
+import './App.css';
+import DiceAndTable from './DiceAndTable';
 
 function App() {
   return (
-    <ChakraProvider value={defaultSystem}>
-      <div>
-
-      </div>
-    </ChakraProvider>
+    <DiceAndTable />
   )
 }
 
