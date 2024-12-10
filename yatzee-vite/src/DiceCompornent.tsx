@@ -11,7 +11,7 @@ const diceValues: { [key: number]: number } = {
     6: 0
 };
 
-const [diceNumber, setDiceNumber] = useState(0)
+const [diceNumber1, setDiceNumber] = useState(0)
 
 export default function DiceCompornent() {
 
